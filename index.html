@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/gif" href="assets/icon-food.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body onload="splash(2500)">
+
+        <section id="splashscreen" class="col m12 splashscreen">
+          <h1 class="letter-food">Foodmap</h1>
+        </section>
+
+        <section id="principal" class="col m12">
+          <h1 class="center letter-principal" >Foodmap</h1>
+          <div class="row line center">
+            <div class="col m1"><i class="material-icons right">check_box_outline_blank</i></div>
+            <div class="col m10">___________________________________________</div>
+            <div class="col m1"><i class="material-icons">check_box_outline_blank</i></div>
+          </div>
+
+          <div class="col m12 center">
+              <iframe class="map center" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3762.8172156833334!2d-99.16530805093316!3d19.420301986826956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1516686562358" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="col s6 m6center">
+            <div class="row center">
+              <input class="col s12 m12 center" id="filtered" placeholder="filtrar restaurantes" type="text">
+            </div>
+            <div class="row">
+              <label class="col s12 m12 center" >Escribe el tipo de comida y te damos la mejor opción.Ejemplo (Italiana).</label>
+            </div>
+
+          </div>
+
+          <section class="container" id="publish-restaurant">
+
+          </section>
+
+          <div class="row">
+            <img id="Japonesa" data-index="4" class="modal-trigger" href="#modal1" src="assets/food-1.jpg" alt="restaurant-1">
+            <img id="China" data-index="0" class="modal-trigger" href="#modal1" src="assets/food-2.jpg" alt="restaurant-3">
+            <img id="Portuguesa" data-index="5" class="modal-trigger" href="#modal1" src="assets/food-3.jpg" alt="restaurant-3">
+            <img id="Argentina" data-index="2" class="modal-trigger" href="#modal1" src="assets/food-4.jpg" alt="restaurant-4">
+          </div>
+
+
+
+        </section>
+
+        <!-- Modal Structure -->
+
+        <div id="modal1" class="modal">
+          <div class="modal-content col s6 m6">
+              <div class="row">
+                <a href="#!" id="close" class="modal-action modal-close waves-effect waves-green btn-flat right">x</a>
+              </div>
+              <div class="row">
+                <div class="col s12 m12 center">
+                  <span id="name-restaurant"></span>
+                </div>
+                <div class="col s12 m12 center">
+                  <img id="img-restaurant" src="assets/food-5.jpg">
+                </div>
+                <div class="row center">
+                  <p id="motto"></p>
+                  <a class="btn waves-effect waves-light orange">pedir ahora</a>
+                </div>
+                <div class="row">
+                  <div class="col s6 m6">
+                    <p id="adress"></p>
+                  </div>
+
+                  <div class="col s6 m6">
+                    <p id="price-range"></p>
+                    <p id="home-service"></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/data.js">
+
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

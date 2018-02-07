@@ -1,0 +1,51 @@
+  /*Tamaño de las imagenes que se mostran como restaurantes más visitados.*/
+  .row > img {
+    height: 100px;
+    width: 23%;
+  }
+
+  .map {
+    width: 30vh;
+    height: 20vh;
+
+  }
+  h1, #name-restaurant {
+    color: #AA692F;
+  }
+  #splashscreen, #principal {
+    background-color: black;
+    height: 100vh;
+  }
+  #principal {
+    display: none;
+  }
+
+  #filtered {
+    color: white;
+    margin-left: 25%;
+    width: 50%;
+   }
+
+    /*Estilos del modal de la información de los de los restaurantes*/
+   #img-restaurant {
+     width: 40%;
+   }
+  #publish-restaurant > p {
+    color: #AA692F;
+    font-size: larger;
+  }
+  .letter-food {
+    margin-left: 20%;
+    margin-top: 0;
+    padding-top: 45%;
+  }
+  .line {
+    color: white;
+
+  }
+  .btn {
+    margin: 0 20%;
+  }
+  .letter-principal {
+    margin-top: 0;
+  }
